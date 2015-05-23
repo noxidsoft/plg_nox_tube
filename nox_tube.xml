@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Nox Tube</name>
+	<author>Noxidsoft</author>
+	<creationDate>March 2012</creationDate>
+	<copyright>Copyright (C) 2007 - 2012 Noxidsoft. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>admin@noxidsoft.com</authorEmail>
+	<authorUrl>www.noxidsoft.com</authorUrl>
+	<version>1.0.1</version>
+	<description>This content plugin modifies a Youtube URL on the fly to import a static image and create a link utlizing RocketTheme's RokBox plugin. Usage {loadtube videoTagNumber} i.e. {loadtube LksuKTD8y0o}</description>
+	<files>
+		<filename plugin="nox_tube">nox_tube.php</filename>
+		<folder>images</folder>
+	</files>
+	
+	<params>
+		<param name="imageWidth" type="text" default="" label="Thumb Width" description="Enter a width value for the thumb e.g. 100px or 60% or 2em" size="10" />
+		<param name="imageHeight" type="text" default="" label="Thumb Height" description="Enter a height value for the thumb e.g. 100px or 60% or 2em" size="10" />
+	</params>
+	
+</install>
