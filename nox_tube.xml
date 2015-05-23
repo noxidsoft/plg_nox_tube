@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install version="1.5" type="plugin" group="content">
+<extension version="2.5" type="plugin" group="content">
 	<name>Content - Nox Tube</name>
 	<author>Noxidsoft</author>
 	<creationDate>March 2012</creationDate>
@@ -7,16 +7,49 @@
 	<license>GNU General Public License version 2 or later</license>
 	<authorEmail>admin@noxidsoft.com</authorEmail>
 	<authorUrl>www.noxidsoft.com</authorUrl>
-	<version>1.0.1</version>
-	<description>This content plugin modifies a Youtube URL on the fly to import a static image and create a link utlizing RocketTheme's RokBox plugin. Usage {loadtube videoTagNumber} i.e. {loadtube LksuKTD8y0o}</description>
+	<version>2.5.3.13</version>
+	<description>PLG_NOX_TUBE_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="nox_tube">nox_tube.php</filename>
-		<folder>images</folder>
+		<folder>language</folder>
+		<folder>player</folder>
 	</files>
 	
-	<params>
-		<param name="imageWidth" type="text" default="" label="Thumb Width" description="Enter a width value for the thumb e.g. 100px or 60% or 2em" size="10" />
-		<param name="imageHeight" type="text" default="" label="Thumb Height" description="Enter a height value for the thumb e.g. 100px or 60% or 2em" size="10" />
-	</params>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field 
+					name="popupWidth" 
+					type="text" 
+					default="" 
+					label="PLG_POPUPWIDTH_LABEL" 
+					description="PLG_POPUPWIDTH_DESC" 
+					size="10" />
+				<field 
+					name="popupHeight" 
+					type="text" 
+					default="" 
+					label="PLG_POPUPHEIGHT_LABEL" 
+					description="PLG_POPUPHEIGHT_DESC" 
+					size="10" />
+				<field 
+					name="thumbWidth" 
+					type="text" 
+					default="" 
+					label="PLG_THUMBWIDTH_LABEL" 
+					description="PLG_THUMBWIDTH_DESC" 
+					size="10" />
+				<field 
+					name="thumbHeight" 
+					type="text" 
+					default="" 
+					label="PLG_THUMBHEIGHT_LABEL" 
+					description="PLG_THUMBHEIGHT_DESC" 
+					size="10" />
+			</fieldset>
+
+		</fields>
+	</config>
 	
-</install>
+</extension>
